@@ -13,7 +13,7 @@ steps:
 
 # Deploy to Google Kubernetes Engine using gke-deploy
   - name: 'gcr.io/cloud-builders/gke-deploy'
-    args: ['run', '--filename', 'gke.yaml', '--image', 'gcr.io/$PROJECT_ID/gcpdevops:$SHORT_SHA', '--location', 'us-central1-c', '--cluster', 'gcp-devops-project', '--namespace', 'gcp-devops-prod']
+    args: ['run', '--filename', 'gke.yaml', '--image', 'gcr.io/kodekloud-gcp-training/test-gcpdevops:latest', '--location', 'us-central1-c', '--cluster', 'gc', '--namespace', 'gcp-devops-prod']
 
 
 
