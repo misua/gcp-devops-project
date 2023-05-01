@@ -9,6 +9,7 @@ steps:
 - name: "gcr.io/cloud-builders/docker"
   args: 
   - run
+  - --network=cloudbuild
   - --filename=gke.yaml
   - --image=gcr.io/$PROJECT_ID/gcpdevops
   - --location=us-central1-c
